@@ -120,9 +120,104 @@ header {
 }
 
 /*About Us*/
-
+.about {
+  padding: 50px 2%;
+  margin: 0;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.about h3 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color);
+}
+.flex-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 28px 12%;
+}
+.flex-child:first-child {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color);
+  justify-content: center;
+  text-align: center;
+  padding-top: 25%;
+  margin-right: 12px;
+  display: inline;
+}
+.flex-child.logo img {
+  width: 360px;
+  height: 360px;
+  object-fit: contain;
+}
 /*The Guild*/
 /*Contact*/
+.contact {
+  padding: 50px 2%;
+  margin: 0;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.contact h3 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color);
+}
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #cc4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #cc4949;
+}
 /*Media Queries*/
 @media (max-width: 1280px) {
   header {
@@ -169,5 +264,13 @@ header {
 
   .open {
     right: 2%;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .flex-child.logo {
+    justify-content: center;
   }
 }
