@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>About Us</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="navStyle.css">
+    <link rel="stylesheet" type="text/css" href="aboutStyle.css">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <script src="aboutScript.js"></script>
   </head>
   <body>
-    <nav>
-      <div class="navbar__logo">
-        <a href="#">
-          <img src="img/Logo.png" alt="Logo">
-        </a>
-      </div>
-      <div class="navbar__links">
-        <a href="#">About</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact Us</a>
-      </div>
-    </nav>
+    <!--Navbar-->
+    <header>
+      <a href="#" class="logo">
+        <img src="img/Logo.png" alt="" />
+      </a>
+      <ul class="navbar">
+        <li><a href="#">Events</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-    <h1 class="heading">About Us</h1>
+      <div class="main">
+        <i class="ri-menu-4-line" id="menu-icon"></i>
+      </div>
+    </header>
 
-    <div class="about">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis ac purus sed aliquam. 
-        Vivamus risus odio, accumsan vitae neque et, tempor viverra enim. 
-        Nullam tristique sodales turpis, a volutpat ipsum facilisis ut. 
-        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-        Cras vehicula ipsum ut elit interdum tempor sit amet in metus. 
-        Duis scelerisque ipsum risus, sit amet ultrices erat commodo eu. 
-        Sed ac nulla blandit, fermentum sapien sed, tempor justo. 
-      </p>
+    <div class="content">
+      <h1 class="heading">Our Team</h1>
+      <!--Container for cards-->    
+      <div class="container" id="card-container"></div>
     </div>
-    <hr>
-    <h1 class="heading">Our Team</h1>
-    
-    <div class="container" id="card-container"></div>
-
-    <script src="script.js"></script>
-
-    <footer>
-
-    </footer>
   </body>
-
 </html>

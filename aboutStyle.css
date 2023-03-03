@@ -1,38 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
-  background-color: #2f2f2f;
+  background: #171717;
   font-family: 'Outfit';
 }
-nav {
-  background-color: #444444;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 0px 0px 2px 2px;
-  margin: -8px;
-}
 
-.about{
-  margin: 3.5%;
-}
-
-.about p{
-  color: #8e8e8e;
-}
-
-.navbar__logo img {
-  height: 40px;
-}
-.navbar__links a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 18px;
-}
-.navbar__links a:first-child {
-  margin-left: 0;
-}
 .heading{
   color: #ffffff;
   text-align: center;
@@ -100,18 +78,19 @@ nav {
 .card__name {
   font-size: 20px;
   font-weight: bold;
+  color: #000000;
 }
 
 .card__lvl,
 .card__hp {
   font-size: 15px;
+  color: #000000;
 }
 
 .card__image {
-  width: 200px;
   height: 200px;
   overflow: hidden;
-  border-radius: 20%;
+  border-radius: 15%;
   margin-top: 20px;
   display: flex;
   justify-content: center;
