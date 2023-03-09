@@ -41,7 +41,7 @@ header {
     transition: all 0.5s ease;
   }
   .navbar a:hover {
-    color: #1717179e;
+    color: #A7A7A79e;
   }
   .main {
     display: flex;
