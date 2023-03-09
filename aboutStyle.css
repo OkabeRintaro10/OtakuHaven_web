@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #171717;
+  font-family: 'Outfit';
+}
+
+.heading{
+  color: #ffffff;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 100px 50px;
+  padding: 50px;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.card__face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  border: 10px solid #da0037;
+}
+
+.card__face--front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card:hover .card__face--front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card__face--back {
+  transform: rotateY(0deg);
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-items: center;
+}
+
+.card__name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.card__lvl,
+.card__hp {
+  font-size: 15px;
+  color: #000000;
+}
+
+.card__image {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 15%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card__description {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}

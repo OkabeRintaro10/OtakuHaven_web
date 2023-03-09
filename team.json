@@ -1,0 +1,38 @@
+[
+  {
+    "name": "John Doe",
+    "lvl": 5,
+    "hp": 100,
+    "image": "img/placeholder.png",
+    "description": "John is a skilled programmer with experience in multiple languages."
+  },
+  {
+    "name": "John Doe",
+    "lvl": 5,
+    "hp": 100,
+    "image": "img/placeholder.png",
+    "description": "John is a skilled programmer with experience in multiple languages."
+  },
+  {
+    "name": "John Doe",
+    "lvl": 5,
+    "hp": 100,
+    "image": "img/placeholder.png",
+    "description": "John is a skilled programmer with experience in multiple languages."
+  },
+  {
+    "name": "John Doe",
+    "lvl": 5,
+    "hp": 100,
+    "image": "img/placeholder.png",
+    "description": "John is a skilled programmer with experience in multiple languages."
+  },
+  {
+    "name": "John Doe",
+    "lvl": 5,
+    "hp": 100,
+    "image": "img/placeholder.png",
+    "description": "John is a skilled programmer with experience in multiple languages."
+  }
+]
+  

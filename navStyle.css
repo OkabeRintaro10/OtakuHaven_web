@@ -1,0 +1,56 @@
+body {
+  min-height: 100vh;
+  background: #171717;
+  color: #d8d8d8;
+  font-family: 'Outfit';
+  margin-top: 100px; /* adjust the value according to your header height */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1717179e;
+    padding: 28px 12%;
+    transition: all 0.5s ease;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar a {
+    color: #d8d8d8;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all 0.5s ease;
+  }
+  .navbar a:hover {
+    color: #A7A7A79e;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+  }
+  #menu-icon {
+    font-size: 35px;
+    color: #d8d8d8;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+  }
